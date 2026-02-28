@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FresaSana Solutions | Expertos en Fungicidas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+<div class="financial-container">
+    <h2>Panel de Control Financiero - FresaSana</h2>
+    <div class="actions">
+        <button id="btn-export-excel" class="btn-excel">
+            <i class="fas fa-file-excel"></i> Exportar Reporte Financiero (.xlsx)
+        </button>
+    </div>
+    
+    <table id="tabla-finanzas">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Enfermedad</th>
+                <th>Cantidad (Und)</th>
+                <th>Precio Unitario</th>
+                <th>Inversión Total</th>
+            </tr>
+        </thead>
+        <tbody id="body-finanzas">
+            </tbody>
+    </table>
+</div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-seedling"></i> FresaSana Solutions
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#diagnostico">Diagnóstico y Soluciones</a></li>
+            <li><a href="#catalogo-rapido">Precios</a></li>
+            <li><a href="#contacto" class="btn-contact">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Protegemos el Oro Rojo de tu Campo</h1>
+            <p>Soluciones fungicidas avanzadas especializadas en cultivos de fresa. Diagnostica, trata y maximiza tu cosecha con nuestra tecnología.</p>
+            <a href="#diagnostico" class="btn-primary">Ver Soluciones <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <section id="diagnostico" class="container section-padding">
+        <h2 class="section-title">Centro de Diagnóstico y Tratamiento</h2>
+        <p class="section-subtitle">Selecciona el problema que observas en tu cultivo para ver la solución específica, precios y resultados.</p>
+        
+        <div class="grid-container" id="disease-grid">
+            </div>
+    </section>
+
+    <section id="catalogo-rapido" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="section-title">Catálogo Rápido de Precios y Presentaciones</h2>
+            <div class="table-responsive">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Producto Solución</th>
+                            <th>Enfermedad Objetivo</th>
+                            <th>Presentación</th>
+                            <th>Precio Sugerido</th>
+                        </tr>
+                    </thead>
+                    <tbody id="price-table-body">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>FresaSana Solutions</h3>
+                <p>Comprometidos con la salud agrícola y la productividad de los fresicultores.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> +57 300 123 4567</p>
+                <p><i class="fas fa-envelope"></i> info@fresasana.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 FresaSana Solutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="treatment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body-content">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
